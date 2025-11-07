@@ -9,9 +9,7 @@ It is written entirely in **MATLAB**, with no deep learning toolboxes — every 
 
 The network learns how **atmospheric pressure decreases with altitude**, following the barometric law:
 
-\[
-P(z) = P_0 e^{-\frac{Mgz}{RT}}
-\]
+$P(z) = P_0 \exp\left(-\dfrac{M g z}{R T}\right)$
 
 A 1–4–1 feedforward neural network (one input, four hidden neurons, one output) is trained using gradient descent with **analytic Jacobians** — enabling precise and transparent learning dynamics.
 
