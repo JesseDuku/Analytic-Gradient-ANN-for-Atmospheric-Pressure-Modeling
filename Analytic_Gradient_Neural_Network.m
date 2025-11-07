@@ -11,7 +11,7 @@
 %   - Adaptive learning rate using fminsearch
 %   - Tracks training loss and plots train/test predictions
 %
-%  Author: [Your Name]
+%  Author: [Jesse Duku]
 %  ------------------------------------------------------------------------
 clear; clc; close all;
 
@@ -155,3 +155,4 @@ function [output, Jacobian] = ANNN_model(theta, input_t)
         Jacobian(t,13) = 1;
     end
 end
+
